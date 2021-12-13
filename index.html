@@ -10,22 +10,19 @@
 <body>
     <div id="plantilla">
         <header class="border-items">
-            <nav>
+        <!-- "header" encabezado de la página -->
+            <nav class="menu">
                 <img src="./img/logo hipico.png"  width="100" height="100" alt="logo hipico">
                 <!-- "img src" para insertar una imagen -->
-                <ul>
-                    <li>
+                <ul class="menu__lista">
+                <!-- "ul" es para realizar listas desordenadas -->
+                    <li class="menu__lista__item">
+                    <!-- "li" list, para listar -->
                         <a href="">Inicio</a>
                     </li>
-                    <li>
-                        <a href="./paginas/nosotros.html">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="./paginas/galeria.html">Galeria</a>
-                    </li>
-                    <li>
-                        <a href="./paginas/contacto.html"></a>
-                    </li>
+                    <li class="menu__lista__item"><a href="./paginas/nosotros.html">Nosotros</a></li>
+                    <li class="menu__lista__item"><a href="./paginas/galeria.html">Galeria</a></li>
+                    <li class="menu__lista__item"><a href="./paginas/contacto.html"></a></li>
                 </ul>
             </nav>
         </header> 
@@ -34,11 +31,12 @@
             <div class="forma__cubo">Lista 1</div>
             <div class="forma__cubo">Lista 2</div>
         </section>
-        <section id="servicios" class="border-items"> Servicios</section>
         <section id="productos" class="border-items"> Productos</section>
         
-        <aside class="publicidad border-items"> Publicidad
-            <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/35F4/production/_116221831_mediaitem116221830.jpg" alt="">
+        <aside class="publicidad border-items">
+            <div><img src="./img/strategy purina.jpg" class="aside_img" alt=""></div>
+            <div><img src="./img/super sport purina.jpg" class="aside_img" alt=""></div>
+            <div><img src="./img/equine adult purina.webp" class="aside_img" alt=""></div>
         </aside>
         
 

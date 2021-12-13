@@ -10,12 +10,11 @@ body{
     height: 100vh;
     grid-template-areas:
         "header header header" /* 100px */
-        "subMenu producto publicidad" /* 2fr */
-        "SubMenu servicios publicidad" /* 3fr */
+        "subMenu producto publicidad" /* 3fr */
         "footer footer footer"; /* 170px */
         /* 20%  auto 300px  */
-    grid-template-rows: 70px auto 3fr 150px;
-    grid-template-columns: 1fr repeat(2, 3fr);
+    grid-template-rows: auto;
+    grid-template-columns: 0.4fr 3fr 0.4fr;
     grid-column-gap: 10px;
     grid-row-gap: 20px;
 }
@@ -24,7 +23,6 @@ body{
 
 header{
     grid-area: header;
-    background-color: tomato;
 }
 
 footer{
@@ -32,7 +30,7 @@ footer{
     justify-content: space-between; /* Horizontal */
     align-items: center; /* vertical */
     grid-area: footer;
-    background-color: #d4ff16;
+    background-color: beige;
     
 }
 footer h2{
@@ -55,10 +53,9 @@ nav ul li{
 nav ul li:hover{
     background-color: tomato;
 }
-#servicios{
-    background-color: aqua;
-    grid-area: servicios;
-}
+
+
+
 #productos{
     grid-area: producto;
     background-color: darkgoldenrod;
@@ -75,13 +72,49 @@ nav ul li:hover{
 
 .publicidad{
     grid-area: publicidad;
-    background-color: blueviolet;
+    display: flex;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .menu{
-    grid-area: menu;
-    background-color: crimson;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#071B33;
+    padding: 10px;
+    font-family: Oxygen;
 }
+.menu__lista{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu__lista__item{
+    display: inline;
+    padding:10px 10px;
+    border-radius: 15px;
+    background-color: black;
+}
+
+.menu__lista__item:hover{
+    background-color: tomato;
+}
+
+.menu__img{
+    width: 100px;
+    height: 100px;
+}
+
+.menu__item{
+    list-style: none;
+}
+.menu__lista__item a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+
 
 .border-items{
     border: 3px;
@@ -106,4 +139,9 @@ nav ul li:hover{
     height: 100px;
     background-color: tomato;
     margin: 10px;
+}
+.aside_img{
+    width: 200px;
+    height: 250px;
+}
 }
