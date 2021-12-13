@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Oxygen:wght@300&family=Rubik:ital@1&display=swap');
+/* tragio fuente, es mejor importar y dejar en estilos */
+
 body{
     margin: 0;
     padding: 0;
@@ -94,7 +97,7 @@ nav ul li:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#071B33;
+    background-color:black;
     padding: 10px;
     font-family: Oxygen;
 }
@@ -105,6 +108,7 @@ nav ul li:hover{
 .menu__lista__item{
     display: inline;
     padding:10px 10px;
+    margin: 10px;
     border-radius: 15px;
     background-color: black;
 }
